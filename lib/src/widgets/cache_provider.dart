@@ -43,7 +43,7 @@ class _CacheProviderState extends State<CacheProvider>
   void dispose() {
     super.dispose();
 
-    WidgetsBinding.instance!.removeObserver(this);
+    _ambiguate(WidgetsBinding.instance)!.removeObserver(this);
   }
 
 /*
