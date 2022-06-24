@@ -1,0 +1,30 @@
+name: app
+description: A new Flutter project.
+
+publish_to: none
+
+module:
+  androidX: true // Add this line.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^0.1.2
+  graphql_flutter:
+    path: ..
+
+dev_dependencies:
+  pedantic: ^1.8.0+1
+  flutter_test:
+    sdk: flutter
+  test: ^1.5.1
+
+flutter:
+  uses-material-design: true
+
+dependency_overrides:
+  graphql:
+    path: ../../graphql
+
+environment:
+  sdk: '>=2.12.0 <3.0.0'
